@@ -1,32 +1,4 @@
-/* eslint-disable react/prop-types */
-import React from "react";
-
-// Class Component
-// class ButtonBlack extends React.Component {
-//   render() {
-//     return (
-//       <button
-//         className="h-10 px-6 font-semibold rounded-md bg-black text-white"
-//         type="submit"
-//       >
-//         Buy now
-//       </button>
-//     );
-//   }
-// }
-
-// functional Component
-const Button = (props) => {
-  const { background = "bg-black", children = "..." } = props;
-  return (
-    <button
-      className={`h-10 px-6 font-semibold rounded-md text-white ${background}`}
-      type="submit"
-    >
-      {children}
-    </button>
-  );
-};
+import Button from "./Components/Elements/Button";
 
 function App() {
   return (
